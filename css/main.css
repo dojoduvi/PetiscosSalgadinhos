@@ -1,0 +1,116 @@
+/* RESETANDO A PÁGINA */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --txtGeral: #422200;
+    --txtClaro1: #FFF;
+    --txtClaro2: #EEEEEE;
+    --txtClaro3: #FFF600;
+    --bgdestaque: #422200;
+    --bgsuave: rgba(66,34,0,0.5);
+}
+
+body{
+    background-color: var(--bgsuave);
+}
+
+header{
+    background-color: var(--bgdestaque);
+    margin-bottom: 50px;
+    position: sticky;
+    top:0;
+    left: 0;
+    z-index: 10;
+}
+
+#logo{
+    height: 100px;
+}
+
+.nav-link{
+    color: var(--txtClaro1);
+}
+
+.navbar-hover-color{
+    color: var(--txtClaro3);
+}
+
+.active{
+    color: var(--txtClaro1);
+}
+
+.carousel-caption{
+    padding: 5px;
+}
+
+.carousel-caption h4{
+    color: var(--txtClaro2);
+    margin-bottom: 15px;
+}
+
+section{
+    padding-top: 126px;
+}
+
+section h2{
+    font-weight: 500;
+}
+
+section p{
+    text-align: justify;
+    font-weight: 500;
+}
+
+.container{
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container h2{
+    color: var(--txtGeral);
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--bgdestaque);
+}
+
+.container p{
+    margin-bottom: 25px;
+}
+
+.container p>a{
+    color: var(--bgdestaque);
+    font-weight: bold;
+}
+
+.card{
+    margin-top: 25px;
+    /* background-color: rgba(66,34,0,0.01); */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.card-header{
+    padding: 20px;
+    color: var(--txtGeral);
+    text-align: center;
+    font-weight: bold;
+}
+
+.card-footer{
+    text-align: center;
+}
+
+.price del{
+    color: #B3010D;
+    font-size: 14px;
+}
+
+.card-text{
+    color: var(--txtGeral);
+}

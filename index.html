@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <title>Petiscos Salgadinhos</title>
+</head>
+<body>
+    <header id="cabecalho">
+        <div class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img id="logo" src="img/logo.png" alt=""></a>
+                <!-- BOTÃO MENU HAMBURGER INICIO -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- BOTÃO MENU HAMBURGER FIM -->
+                <nav id="menu" class="collapse navbar-collapse justify-content-end">
+                    <ul class="nav navbar-nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#" aria-current="page">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#sobre" aria-current="page">Sobre</a>
+                        </li>
+                            <a class="nav-link" href="#fritos" aria-current="page">Produtos Fritos</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#congelados" aria-current="page">Produtos Congelados</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#pedido" aria-current="page">Peça Já</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div data-bs-spy="scroll" data-bs-target="#cabecalho">
+        <div class="container"> <!-- CARROSEL -->
+            <div id="carousel-produtos" class="carousel carousel-fade slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <!-- ITENS DO CARROSEL -->
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <img src="img/produtos/baf.jpg" alt="">
+                        <div class="carousel-caption"><h4>Bolinha de Bacon Alho e Queijo</h4></div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="img/produtos/bbf.jpg" alt="">
+                        <div class="carousel-caption"><h4>Bolinho de Bacalhau</h4></div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="img/produtos/bqf.jpg" alt="">
+                        <div class="carousel-caption"><h4>Bolinha de Queijo</h4></div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="img/produtos/ccf.jpg" alt="">
+                        <div class="carousel-caption"><h4>Coxinha de Carne</h4></div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="img/produtos/cff.jpg" alt="">
+                        <div class="carousel-caption"><h4>Coxinha de Frango</h4></div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="img/produtos/clf.jpg" alt="">
+                        <div class="carousel-caption"><h4>Churros Doce de Leite</h4></div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="img/produtos/dcf.jpg" alt="">
+                        <div class="carousel-caption"><h4>Delicia de Calabresa</h4></div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="img/produtos/eff.jpg" alt="">
+                        <div class="carousel-caption"><h4>Empada de Frango</h4></div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="img/produtos/itf.jpg" alt="">
+                        <div class="carousel-caption"><h4>Croquete Italianinho</h4></div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="img/produtos/kff.jpg" alt="">
+                        <div class="carousel-caption"><h4>Croquete de Frango</h4></div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="img/produtos/kkf.jpg" alt="">
+                        <div class="carousel-caption"><h4>Croquete de Carne</h4></div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="img/produtos/qff.jpg" alt="">
+                        <div class="carousel-caption"><h4>Kibe de Frango</h4></div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="img/produtos/qsf.jpg" alt="">
+                        <div class="carousel-caption"><h4>Quadradinho Sertanejo</h4></div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="img/produtos/tpf.jpg" alt="">
+                        <div class="carousel-caption"><h4>Travesseirinho de Presunto e Queijo</h4></div>
+                    </div>
+                </div>
+                <button data-bs-target="#carousel-produtos" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <!-- BOTÃO DE NAVEGAÇÃO DO SLIDE  N-E-X-T> -->
+                <button data-bs-target="#carousel-produtos" data-bs-slide="next" class="carousel-control-next" type="button">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <!-- INDICADOR DE NUMERO DE SLIDE -->
+                <div class="carousel-indicators">
+                    <button data-bs-target="#carousel-produtos" class="active" data-bs-slide-to="0" type="button"></button>
+                    <button data-bs-target="#carousel-produtos" data-bs-slide-to="1" type="button"></button>
+                    <button data-bs-target="#carousel-produtos" data-bs-slide-to="2" type="button"></button>
+                    <button data-bs-target="#carousel-produtos" data-bs-slide-to="3" type="button"></button>
+                    <button data-bs-target="#carousel-produtos" data-bs-slide-to="4" type="button"></button>
+                    <button data-bs-target="#carousel-produtos" data-bs-slide-to="5" type="button"></button>
+                    <button data-bs-target="#carousel-produtos" data-bs-slide-to="6" type="button"></button>
+                    <button data-bs-target="#carousel-produtos" data-bs-slide-to="7" type="button"></button>
+                    <button data-bs-target="#carousel-produtos" data-bs-slide-to="8" type="button"></button>
+                    <button data-bs-target="#carousel-produtos" data-bs-slide-to="9" type="button"></button>
+                    <button data-bs-target="#carousel-produtos" data-bs-slide-to="10" type="button"></button>
+                    <button data-bs-target="#carousel-produtos" data-bs-slide-to="11" type="button"></button>
+                    <button data-bs-target="#carousel-produtos" data-bs-slide-to="12" type="button"></button>
+                    <button data-bs-target="#carousel-produtos" data-bs-slide-to="13" type="button"></button>
+                </div>        
+            </div>
+        </div>
+        <section id="sobre">
+            <div class="container">
+                <h2>Sobre</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos eos dolorum ullam placeat? Reprehenderit soluta aliquid libero accusamus illum. Amet ipsum velit ipsa eveniet consequatur molestias ex quo fuga aspernatur.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque ducimus pariatur quod iure! Aperiam reprehenderit, optio delectus dicta labore obcaecati, aliquam voluptatem, facilis ipsa consequuntur veritatis perferendis laudantium placeat. Quis?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, quam, voluptate impedit blanditiis, ea cum repellat soluta laudantium distinctio nam praesentium saepe! Nostrum illo vero porro, perferendis aliquid earum tempore.</p>
+            </div>
+        </section>
+        <section id="fritos">
+            <div class="container">
+                <h2>Produtos Fritos</h2>
+                <p>Trabalhamos com pacotes de salgadinhos com 20 unidades, com aproximadamente 300 gramas de salgadinhos. Fritamos o seu salgadinho, embalamos e enviamos pra você no conforto do seu lar, ou você pode retirar aqui em nossa loja, basta fazer o seu pedido conosco.</p>
+                <p><a href="#pedido">Peça já o Seu!!!</a></p>
+                <div class="row">
+                    <div class="col-4">
+                        <div class="card">
+                            <header class="card-header">
+                                Bolinha de Bacon alho e Queijo
+                            </header>
+                            <img src="img/produtos/thumbs_f/baf.png" alt="">
+                            <div class="card-body">
+                                <p class="card-text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, reprehenderit laudantium minus dignissimos quasi dolorum nemo odio vero mollitia optio!
+                                </p>
+                            </div>
+                            <footer class="card-footer">
+                                <div class="price">
+                                    <del>De: R$ 25,00</del> <strong>Por: R$ 20,00</strong>
+                                </div>
+                            </footer>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card">
+                            <header class="card-header">
+                                Bolinho de Bacalhau
+                            </header>
+                            <img src="img/produtos/thumbs_f/bbf.png" alt="">
+                            <div class="card-body">
+                                <p class="card-text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, reprehenderit laudantium minus dignissimos quasi dolorum nemo odio vero mollitia optio!
+                                </p>
+                            </div>
+                            <footer class="card-footer">
+                                <div class="price">
+                                    <del>De: R$ 25,00</del> <strong>Por: R$ 20,00</strong>
+                                </div>
+                            </footer>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card">
+                            <header class="card-header">
+                                Bolinha de Queijo
+                            </header>
+                            <img src="img/produtos/thumbs_f/bqf.png" alt="">
+                            <div class="card-body">
+                                <p class="card-text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, reprehenderit laudantium minus dignissimos quasi dolorum nemo odio vero mollitia optio!
+                                </p>
+                            </div>
+                            <footer class="card-footer">
+                                <div class="price">
+                                    <del>De: R$ 25,00</del> <strong>Por: R$ 20,00</strong>
+                                </div>
+                            </footer>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card">
+                            <header class="card-header">
+                                Coxinha de Carne
+                            </header>
+                            <img src="img/produtos/thumbs_f/ccf.png" alt="">
+                            <div class="card-body">
+                                <p class="card-text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, reprehenderit laudantium minus dignissimos quasi dolorum nemo odio vero mollitia optio!
+                                </p>
+                            </div>
+                            <footer class="card-footer">
+                                <div class="price">
+                                    <del>De: R$ 25,00</del> <strong>Por: R$ 20,00</strong>
+                                </div>
+                            </footer>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card">
+                            <header class="card-header">
+                                Coxinha de Frango
+                            </header>
+                            <img src="img/produtos/thumbs_f/cff.png" alt="">
+                            <div class="card-body">
+                                <p class="card-text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, reprehenderit laudantium minus dignissimos quasi dolorum nemo odio vero mollitia optio!
+                                </p>
+                            </div>
+                            <footer class="card-footer">
+                                <div class="price">
+                                    <del>De: R$ 25,00</del> <strong>Por: R$ 20,00</strong>
+                                </div>
+                            </footer>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card">
+                            <header class="card-header">
+                                Churros Doce de Leite
+                            </header>
+                            <img src="img/produtos/thumbs_f/clf.png" alt="">
+                            <div class="card-body">
+                                <p class="card-text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, reprehenderit laudantium minus dignissimos quasi dolorum nemo odio vero mollitia optio!
+                                </p>
+                            </div>
+                            <footer class="card-footer">
+                                <div class="price">
+                                    <del>De: R$ 25,00</del> <strong>Por: R$ 20,00</strong>
+                                </div>
+                            </footer>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card">
+                            <header class="card-header">
+                                Delicia de Calabresa
+                            </header>
+                            <img src="img/produtos/thumbs_f/dcf.png" alt="">
+                            <div class="card-body">
+                                <p class="card-text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, reprehenderit laudantium minus dignissimos quasi dolorum nemo odio vero mollitia optio!
+                                </p>
+                            </div>
+                            <footer class="card-footer">
+                                <div class="price">
+                                    <del>De: R$ 25,00</del> <strong>Por: R$ 20,00</strong>
+                                </div>
+                            </footer>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="congelados">
+            <div class="container">
+                <h2>Produtos Congelados</h2>
+                <p>Trabalhamos com pacotes de salgadinhos com 20 unidades, com aproximadamente 300 gramas de salgadinhos. Os pacotes são Devidamente congelados e datados para sua segurança. Enviamos pra você no conforto do seu lar, ou você pode retirar aqui em nossa loja, basta fazer o seu pedido conosco.</p>
+                <p><a href="#pedido">Peça já o Seu!!!</a></p>
+                <div class="row">
+                    <div class="col-4">
+                        <div class="card">
+                            <header class="card-header">
+                                Kibe
+                            </header>
+                            <img src="img/produtos/thumbs_c/kb.jpg" alt="">
+                            <div class="card-body">
+                                <p class="card-text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, reprehenderit laudantium minus dignissimos quasi dolorum nemo odio vero mollitia optio!
+                                </p>
+                            </div>
+                            <footer class="card-footer">
+                                <div class="price">
+                                    <del>De: R$ 15,00</del> <strong>Por: R$ 10,00</strong>
+                                </div>
+                            </footer>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card">
+                            <header class="card-header">
+                                Quadradinho Sertanejo
+                            </header>
+                            <img src="img/produtos/thumbs_c/qs.jpg" alt="">
+                            <div class="card-body">
+                                <p class="card-text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, reprehenderit laudantium minus dignissimos quasi dolorum nemo odio vero mollitia optio!
+                                </p>
+                            </div>
+                            <footer class="card-footer">
+                                <div class="price">
+                                    <del>De: R$ 15,00</del> <strong>Por: R$ 10,00</strong>
+                                </div>
+                            </footer>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card">
+                            <header class="card-header">
+                                Risoles de Presunto e Queijo
+                            </header>
+                            <img src="img/produtos/thumbs_c/rp.jpg" alt="">
+                            <div class="card-body">
+                                <p class="card-text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, reprehenderit laudantium minus dignissimos quasi dolorum nemo odio vero mollitia optio!
+                                </p>
+                            </div>
+                            <footer class="card-footer">
+                                <div class="price">
+                                    <del>De: R$ 15,00</del> <strong>Por: R$ 10,00</strong>
+                                </div>
+                            </footer>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card">
+                            <header class="card-header">
+                                Travesseirinho de Presunto e Queijo
+                            </header>
+                            <img src="img/produtos/thumbs_c/tp.jpg" alt="">
+                            <div class="card-body">
+                                <p class="card-text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, reprehenderit laudantium minus dignissimos quasi dolorum nemo odio vero mollitia optio!
+                                </p>
+                            </div>
+                            <footer class="card-footer">
+                                <div class="price">
+                                    <del>De: R$ 15,00</del> <strong>Por: R$ 10,00</strong>
+                                </div>
+                            </footer>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="pedido">
+            <div class="container">
+                <h2>Pedido</h2>
+            </div>
+        </section>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
