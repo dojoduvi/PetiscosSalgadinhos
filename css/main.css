@@ -68,31 +68,37 @@ section p{
     font-weight: 500;
 }
 
-.container{
+.container, .produtos{
     max-width: 1024px;
     width: 100%;
     margin: 0 auto;
 }
 
-.container h2{
+
+.container h2,
+.produtos h2{
     color: var(--txtGeral);
     padding-bottom: 10px;
     border-bottom: 2px solid var(--bgdestaque);
 }
 
-.container p{
+.container p,
+.produtos p{
     margin-bottom: 25px;
 }
 
-.container p>a{
+.container p>a
+.produtos p>a{
     color: var(--bgdestaque);
     font-weight: bold;
 }
 
 .card{
     margin-top: 25px;
-    /* background-color: rgba(66,34,0,0.01); */
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+.col{
+    max-width: 31%;
 }
 
 .card-header{
@@ -113,4 +119,103 @@ section p{
 
 .card-text{
     color: var(--txtGeral);
+}
+
+.tab-content .form-control{
+    width: 50px;
+}
+
+.tab-content{
+    margin: 0 auto;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+form{
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.d-grid{
+    margin-top: 10px;
+}
+
+.form-check-label{
+    color: var(--txtGeral);
+}
+
+.container-flex{
+    margin: 0 auto;
+    width: 500px;
+}
+
+footer{
+    margin-top: 50px;
+    text-align: center;
+    padding: 10px;
+}
+
+/* PARA RESOLUÇÃO DE SMARTPHONES */
+
+@media screen and (max-width: 767px){
+    .container, .produtos{
+        width: 90%;
+        display: block;
+    }
+
+    #logo{
+        height: 95px;
+    }
+
+
+    .navbar-toggler{
+        margin: 0 auto;
+    }
+
+    .menu{
+        color: var(--txtClaro2);
+    }
+
+    .col{
+        max-width: 100%;
+    }
+    
+    .nav-item{
+        text-align: center;
+    }
+
+    section{
+        padding-top: 165px;
+    }
+    
+    .container h2{
+        font-size: 22px;
+    }
+
+    .carousel-item h4{
+        font-size: .9em;
+    }
+
+    .container-flex{
+        margin: 0 auto;
+        width: 100%;
+    }
+
+}
+
+/* PARA RESOLUÇÃO DE TABLETS */
+
+@media screen and (min-width: 768px) and (max-width:1023px){
+    .container, .produtos{
+        width: 90%;
+        display: block;
+    }
+
+    .navbar-toggler{
+        margin: 0 auto;
+    }
+
+    .col{
+        max-width: 48%;
+    }
+    
 }
