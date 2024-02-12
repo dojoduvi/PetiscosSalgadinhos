@@ -11,10 +11,10 @@
     <title>Petiscos Salgadinhos</title>
 </head>
 <body>
-    <header id="cabecalho">
-        <div class="navbar navbar-expand-lg">
+    <header id="cabecalho" class=" sticky-top">
+        <div class="navbar navbar-expand-lg navbar-dark">
             <div class="container">
-                <a class="navbar-brand" href="#"><img id="logo" src="img/logo.png" alt=""></a>
+                <a class="navbar-brand d-flex align-items-center" href="#"><img id="logo" src="img/logo.png" alt=""></a>
                 <!-- BOTÃO MENU HAMBURGER INICIO -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -386,6 +386,9 @@
                                     <label class="form.check-label" for="aceito">Favor Entregar</label>
                                     <input class="form-check-input" type="checkbox" name="aceito" id="aceito">
                                 </div>
+                                <div class="endereco">
+                                    <input id="txtEndereco" name="txtEndereco" type="text" placeholder="Bairro / Rua / Número / Referência" class="form-control form-control-sm">
+                                </div>
                                 <div class="d-grid">
                                     <button type="submit" class="btn btn-info btn-lg">Enviar Pedido</button>
                                 </div>
@@ -426,12 +429,23 @@
             </div>
         </section>
     </div>
-    <footer>
+    <footer class="sticky-bottom">
         <div class="container">
             <h3 class="h6">2024 &copy; Petiscos Salgadinhos - Todos os Direitos reservados</h3>
             <small>Powered By - Douglas Lazaro Moreira - EBAC</small>
         </div>
     </footer>
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script
+        src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+        crossorigin="anonymous">
+    </script>
+    <script>
+        // Fecha o menu após o clique
+        $(".nav-link").on("click", function(){
+            $('.navbar-collapse').collapse('hide');
+        });
+    </script>
 </body>
 </html>

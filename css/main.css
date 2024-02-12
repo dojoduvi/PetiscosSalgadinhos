@@ -23,11 +23,16 @@ body{
 
 header{
     background-color: var(--bgdestaque);
-    margin-bottom: 50px;
-    position: sticky;
+    color: var(--txtClaro2);
+    margin-bottom: 50px; 
     top:0;
     left: 0;
     z-index: 10;
+}
+
+footer{
+    background-color: var(--bgdestaque);
+    color: var(--txtClaro2);
 }
 
 #logo{
@@ -143,6 +148,10 @@ form{
     color: var(--txtGeral);
 }
 
+#txtEndereco{
+    width: 95%;
+}
+
 .container-flex{
     margin: 0 auto;
     width: 500px;
@@ -166,7 +175,10 @@ footer{
         height: 95px;
     }
 
-
+    #txtEndereco{
+        width: 100%;
+    }
+    
     .navbar-toggler{
         margin: 0 auto;
     }
@@ -177,6 +189,10 @@ footer{
 
     .col{
         max-width: 100%;
+    }
+
+    .footer{
+        position: static;
     }
     
     .nav-item{
@@ -216,6 +232,10 @@ footer{
 
     .col{
         max-width: 48%;
+    }
+    
+    #txtEndereco{
+        width: 100%;
     }
     
 }
